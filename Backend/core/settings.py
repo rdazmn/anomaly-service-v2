@@ -19,7 +19,7 @@ SECRET_KEY = '9kq12)0jz8o)y@y7s&btk-t!%6ihv%l^mhq*jz+gm9cde3wzr)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['anomaly-sms-serivce.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 CORS_ORIGIN_ALLOW_ALL = True
 
 #Deployment
