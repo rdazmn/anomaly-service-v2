@@ -67,7 +67,7 @@ def predictFile(request):
     filePathName = fs.url(filePathName)
     filePath ='.'+filePathName
     data = pd.read_csv(filePath)
-    data_lst = data.values.tolist()
+    data_lst = data['message'].values.tolist()
     predict_fs = predict_spam(data_lst)
 
     ed_vals = map(mapping_function,predict_fs)
